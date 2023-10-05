@@ -20,15 +20,17 @@ from rest_framework import routers
 from myapp.views import ProductViewSet, FashionViewSet, SportsViewSet, ElectronicsViewSet
 
 
-
+# Created a router for managing API endpoints
 router = routers.SimpleRouter()
-router.register('products', ProductViewSet)
-router.register('fashion', FashionViewSet)
-router.register('sports', SportsViewSet)
-router.register('electronics', ElectronicsViewSet)
+
+
+router.register('products', ProductViewSet)         # API endpoint for products
+router.register('fashion', FashionViewSet)          # API endpoint for fashion products
+router.register('sports', SportsViewSet)            # API endpoint for sports products
+router.register('electronics', ElectronicsViewSet)  # API endpoint for electronics products
 
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('', include(router.urls)),   # Included API endpoints defined by the router
     path('admin/', admin.site.urls),
 ]

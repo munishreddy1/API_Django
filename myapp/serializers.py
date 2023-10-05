@@ -5,5 +5,7 @@ from .models import Product
 class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Product
-        fields = ['name', 'price', 'category', 'id']
+        
+        model = Product          # The model to be serialized
+        fields = '__all__'       # Included all the fields in the serialized representation
+
