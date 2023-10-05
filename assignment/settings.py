@@ -32,9 +32,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'myapp.apps.MyappConfig',
-    'rest_framework',
-    'rest_framework.authtoken',
+    'myapp.apps.MyappConfig',   # Updated myapp for configuration
+    'rest_framework',           # Updated the rest_framework
+    'rest_framework.authtoken', # Updated authtoken as well
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

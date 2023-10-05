@@ -6,7 +6,7 @@ from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
-
+# new_product = Product(name=name, id)
 
 # Defined a viewset for handling Product-related operations.
 # This viewset is protected by TokenAuthentication, and only authenticated users (IsAuthenticated) can access it.
